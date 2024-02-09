@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, test } from "vitest";
+import { describe, expect, test, vi } from "vitest";
 import Home from "../pages/Home/Home";
 
 
@@ -9,6 +9,8 @@ describe("Home", () => {
 		render(<Home />)
 		expect(screen.getByText("This is Home")).toBeDefined()
 	})
+
+
 
 	test("test click button", () => {
 		render(<Home />)

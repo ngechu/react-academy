@@ -23,6 +23,7 @@ const Navbar = () => {
 				</NavLink>
 
 				<NavLink
+					data-testid="contact"
 					to={"/contact"}>
 
 					<h3>Contact</h3>
@@ -36,9 +37,7 @@ const Navbar = () => {
 					to={"/login"}
 					onClick={() => handleCLick()}
 				>
-
 					<h3>LogOut</h3>
-
 				</NavLink>
 
 
